@@ -43,7 +43,7 @@
 const domContainer1 = document.querySelector('#ckt');
 const root1 = ReactDOM.createRoot(domContainer1);
 root1.render(
-    <button onClick={() => alert("Hello world.")}>
+    <button onClick={() => alert("Helle world.")}>
         Like
     </button>
 );

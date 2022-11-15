@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0"
+  },
+  "scripts": {
+    "precompress": "{{ executes BEFORE the `compress` script }}",
+    "transfer": "echo test",
+    "build": "babel --plugins ./node_modules/@babel/plugin-transform-react-jsx ./public/CktButtonJsx.js > ./dist/bundle.js"
+  }
+}
