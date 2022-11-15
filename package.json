@@ -12,8 +12,7 @@
     "webpack-dev-server": "^3.1.8"
   },
   "scripts": {
-    "precompress": "{{ executes BEFORE the `compress` script }}",
-    "transfer": "echo test",
+    "test": "echo test",
     "build": "babel --plugins ./node_modules/@babel/plugin-transform-react-jsx ./public/CktButtonJsx.js > ./dist/bundle.js"
   }
 }
