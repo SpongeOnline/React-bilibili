@@ -40,11 +40,11 @@
 // );
 
 // Demo4
-// const domContainer1 = document.querySelector('#ckt');
-// const root1 = ReactDOM.createRoot(domContainer1);
-// root1.render(
-//         <button onClick={() => alert("Hello world.")}>
-//           Like
-//         </button>
-// );
+const domContainer1 = document.querySelector('#ckt');
+const root1 = ReactDOM.createRoot(domContainer1);
+root1.render(
+    <button onClick={() => alert("Hello world.")}>
+        Like
+    </button>
+);
 
