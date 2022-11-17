@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="requirejs.js"></script>
+    <title>require的使用</title>
+</head>
+<body>
+    
+<script type="module">
+    // 使用require导入example.js c.js
+       require(["example",'c'], function() {
+           var example = require("example");
+           var c = require("c");
+           console.log(example.message);
+           example.bb(2,7);
+           c();
+       });
+   </script>
+</body>
+    
+</html>
