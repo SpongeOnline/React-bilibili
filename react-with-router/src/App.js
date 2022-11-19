@@ -1,17 +1,20 @@
 import React, { Component} from "react";
-import {hot} from "react-hot-loader";
-import "./App.css";
-import {CktButtonCallBack} from "../components/button/CktButton"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Main from "./modules/main"
 
 class App extends Component{
   render(){
     return(
-      <div className="App">
-        <h1> Hello, World! </h1>
-        
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />}>
+         
+          </Route>
+        </Routes>
+       
+      </BrowserRouter>
     );
   }
 }
 
-export default hot(module)(App);
+export default App;
