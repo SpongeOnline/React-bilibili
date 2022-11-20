@@ -1,7 +1,11 @@
-import React from "react";
+import React from "react"
+import { fluentButton, provideFluentDesignSystem } from "@fluentui/web-components"
+provideFluentDesignSystem().register(fluentButton());
 
 function CktButton(props) {
-    return <h1>Hello, {props.name}</h1>;
+    // return <h1>Hello, {props.name}</h1>;
+    // The Button Below is from Fluent UI framework
+    return <fluent-button>Hello world</fluent-button>
 }
 
 class Welcome extends React.Component {
