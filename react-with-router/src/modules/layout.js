@@ -12,9 +12,9 @@ const Layout = () => {
           <li>
             <Link to="/test">tssssfdsafest</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact">Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
 

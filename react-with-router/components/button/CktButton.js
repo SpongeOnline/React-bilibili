@@ -88,4 +88,4 @@ class CktButtonCallBack extends React.Component {
     }
 }
 
-export {CktButtonCallBack};
+export default CktButton;
