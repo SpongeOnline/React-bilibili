@@ -1,6 +1,6 @@
 import React from "react"
 
-const main = (props) => {
+const LeftSideBar = (props) => {
     const handleClick = () => {
       alert(props.name + " just clicked this button.")
     };
@@ -8,10 +8,10 @@ const main = (props) => {
     return (
       <div>
         <button type="button" onClick={handleClick}>
-            test
+            test test test 123
         </button>
       </div>
     );
   };
   
-  export default main;
+  export default LeftSideBar;
