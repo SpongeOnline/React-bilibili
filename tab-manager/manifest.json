@@ -1,0 +1,23 @@
+{
+  "name": "Najdeme to za vas",
+  "version": "0.1",
+  "incognito": "split",
+   "background": {  
+  },
+  "permissions": [ "https://*.google.com/*"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google.com; object-src 'self'",
+ 
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+ 
+      "js": ["./dist/bundle.js"]
+    }
+  ],
+   
+ "browser_action": {
+    "default_popup": "./public/index.html"
+  },
+ 
+  "manifest_version": 2
+}
