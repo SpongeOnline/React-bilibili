@@ -88,4 +88,36 @@ class CktButtonCallBack extends React.Component {
     }
 }
 
+class ButtonSetStatus extends Component{
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: "Click here",
+    };
+    this.clickButton = ()=> {
+      alert("hahahha")
+    };
+    this.listener = this.listener.bind(this);
+  }
+
+  listener(newValue) {
+    this.setState({
+      value: newValue
+    })
+  }
+
+  render(){
+    return(
+      <div className="App">
+        <h1>{this.state.value}</h1>
+        <TestButton 
+          name={this.state.value} 
+          event={this.clickButton}
+          onValueChange={this.listener}/>
+      </div>
+    );
+  }
+}
+
 export {CktButtonCallBack};
